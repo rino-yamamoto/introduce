@@ -50,6 +50,7 @@ p{
 /* wrapper部分 */
 .wrapper{
     margin: 0 auto;
+    padding: 0 25px;
     max-width: 960px;
 }
 
@@ -59,30 +60,42 @@ p{
     margin-bottom: 80px;
 }
 .picture{
-    max-width: 960px;
-
-    margin-top: 70px;
+    max-width: 960px;                                                 /*ko ko */
+    
+    margin-top: 70px;                                                        /* koko */
     margin-bottom: 100px;
 }
-h1{
+h1{                                                                   /* tac消した */
     margin-bottom: 30px;
-
 }
 
 /* アイコン部分 */
 .time{
     margin-bottom: 20px;
 }
-.time, .target{
+.time, 
+.target{
     display: flex;
     justify-content: flex-start;
 }
-.time-icon img{
-    max-width: 50px;
+.time-icon img,
+.target-icon img{
+    width: 30px;
+    padding-top: 8px;
+}
+
+.size-icon{
+    margin-left: -1px;
+    width: 35px;
 }
 
 .text{
     margin-left: 30px;
+    line-height: 50px;
+    max-width: calc(100% - 60px);
+}
+
+.target{
     margin-bottom: 80px;
 }
 
@@ -95,11 +108,10 @@ h1{
     margin-bottom: 30px;
 }
 .content{
-    width: 463px;
-    height: 340px;
+    /* max-height: 657px; */
     background-color: rgba(104, 129, 54, 0.11);
     padding: 30px;
-
+    
     margin-bottom: 60px;
 }
 .back{
@@ -109,4 +121,57 @@ h1{
     margin: 0 auto;
     margin-bottom: 160px;
     
+}
+
+/* レスポンシブ対応********************************************************************** */
+/* タブレット */
+@media screen and (max-width: 708px) {
+/* 文字設定 */
+h1{
+    font-size: 32px;
+    letter-spacing: 11px;
+} 
+
+.text{
+    line-height: 33px;
+}
+
+/* study部分 */
+.study{
+    display: block;
+    justify-content: center;
+}
+}
+
+/* レスポンシブ対応********************************************************************** */
+/* SP */
+@media screen and (max-width: 519px) {
+    .btnlinestretches3 {
+        padding: 5px 10px;
+    }
+
+    h1{
+        font-size: 26px;
+        letter-spacing: 11px;
+    } 
+
+    p{
+        font-size: 14px;
+    }
+    
+    /* header部分 */
+    .picture{
+        margin-top: 70px;
+        margin-bottom: 40px;
+    }
+
+    header .first {
+        margin-bottom: 0;
+    }
+    
+    /* study部分 */
+    .study{
+        display: block;
+        justify-content: center;
+    }
 }
