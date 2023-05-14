@@ -65,6 +65,7 @@ header p{
 
 /* wrapper部分 */
 .wrapper{
+    padding: 0 25px;
     margin: 0 auto;
     max-width: 960px;
 }
@@ -91,14 +92,51 @@ header p{
     justify-content: space-between;
 }
 .content2 .img2{
-    max-width: 300px;
-
+    max-width: 270px;
+    padding: 15px;
     margin-bottom: 60px;
 }
+
+.back-btn{
+    padding: 15px;
+    width: 910px;
+}
+
 .back{
+    /* max-width: 910px; */
     padding: 10px;
     display: inline-block;
     background-color:rgba(104, 129, 54, 0.11);
     margin-bottom: 160px;
-    
+}
+
+/* レスポンシブ対応********************************************************************** */
+/* タブレット */
+@media screen and (max-width: 860px) {
+    .content2 {
+        max-width: 540px;
+        margin: 0 auto;
+    }
+    .back-btn{
+        max-width: 540px;
+        margin: 0 auto;
+    }
+}
+
+/* レスポンシブ対応********************************************************************** */
+/* SP */
+@media screen and (max-width: 590px) {
+    .content2 {
+        justify-content: center;
+    }
+    .number {
+        margin-bottom: 0px;
+    }
+    .back{
+        margin-bottom: 100px;
+    }
+    .back-btn {
+        max-width: 270px;
+        margin: 0 auto;
+    }
 }

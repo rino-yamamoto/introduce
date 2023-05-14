@@ -126,11 +126,13 @@ h1{
 .main-copy>h2{
     margin-bottom: 40px;
     text-align: center;
+    padding: 0 10px;
 }
 
 .main-copy>p{
     line-height: 2;
     text-align: center;
+    padding: 0 10px;
 }
 
 
