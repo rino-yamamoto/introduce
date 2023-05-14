@@ -1,0 +1,229 @@
+@charset "UTF-8";
+
+
+html,body,h1,h2,h3,ul,li,p{
+    margin: 0 ;
+    padding: 0;
+    line-height: 1;
+}
+
+
+body {
+    font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+    /*   ここまでフォントファミリー  各OSに適したフォントを用意しておく*/
+    color: #555;
+    /* サイト全体の文字色を定義しておく */
+}
+
+
+
+li {
+    list-style-type: none;
+    /*   liの装飾を削除する  */
+}
+
+
+a {
+    text-decoration: none;
+    /*   aタグの初期設定。aタグはでデフォルトで持っている下線を消しておく */
+}
+
+img{
+    width: 100%;
+    /* 親要素以上に大きくならない */
+
+}
+
+
+
+/*-----------------------------------------
+    pc max- setting   
+-----------------------------------------*/
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+/*PCの情報コンテンツの最大幅の設定 ------ 各パーツでこのCSSを再利用、または流用*/
+
+/*-----------------------------------------
+    header setting
+------------------------------------------*/
+
+.header{
+    background-color: #eee;
+    /* PCの幅いっぱいに表示させるための、幅の制限をつけない （  背景色だけ ）*/
+}
+
+
+.header_inner {
+    display: flex;
+    /* 子要素、水平方向の揃えの親要素設定  */
+    justify-content: space-between;
+    /*  水平方向の揃えのオプション ( 両端揃い )*/
+    height: 100px;
+    /* 高さ指定 */
+    align-items: center;
+    /* heightの垂直中央揃えのオプション  */
+}
+
+.header h1 a {
+    
+    font-size: 24px;
+    color: #555;
+    padding: 10px ;
+    display: block;
+
+}
+
+
+
+/*-----------------------------------------
+    nav_menu setting
+------------------------------------------*/
+
+.nav{
+    width: 65%;
+    /* 親要素の65%の幅にnavを設定 */
+}
+
+
+.nav ul {
+    display: flex 
+    /* 子要素 li の水平方向揃え( 横並び )させるための親要素設定  */
+}
+
+.nav li{
+    width: 20%;
+    /* 横並びした子要素の5分割したパーセンテージで表示 */
+    line-height: 40px;
+    /* li の高さを40pxに取得 */
+    border-left: 1px solid #aaa;
+    /* li の幅がより明示しやすいように線を左側に表示 */
+}
+
+.nav li:last-child {
+    border-right: 1px solid #aaa;
+    /* li の最後に線を右側に表示 */
+}
+
+.nav li a {
+    display: block;
+    /* インライン要素のa タグをブロック要素に変換し、幅と高さを取得できるようにする */
+    text-align: center;
+    /* テキストを中央に整列 */
+    color: #333;
+    font-size: 14px;
+
+}
+
+.nav li a:hover {
+    background-color: #ccc;
+}
+
+/*-----------------------------------------
+    main_image setting
+------------------------------------------*/
+
+.main_image{
+    background: url(../img/main01.jpg) no-repeat center/cover;
+    /* 背景画像を表示去るためのショートカット */
+    height: 350px;
+    /* 背景画像を表示には、高さが必要（350pxに設定） */
+    margin-bottom: 50px;
+    /* 次の下のブロックに余白を設定 */
+}
+
+
+
+
+
+
+/*-----------------------------------------
+    m-column setting
+------------------------------------------*/
+
+.m-column{
+    margin-bottom: 70px;
+    /* 次の下のブロックに余白を設定 */
+}
+
+
+.m-column h3{
+    border-left: 4px solid #556;
+    background-color: #eee;
+    padding: 10px 8px; 
+    font-size: 18px;  
+    margin-bottom: 10px; 
+}
+
+
+.m-column ul{
+    display: flex;
+    /* 子要素、水平方向の揃えの親要素設定  */
+    justify-content: space-between;
+    /*  水平方向の揃えのオプション ( 両端揃い )*/
+}
+
+.m-column li{
+    width: calc((100% - 30px) / 3);
+    /* 横並びした隣の要素の幅を正確に取得したい場合の設定 */
+    box-sizing: border-box;
+    /* 幅を取得した要素にpaddingや、borderがつくとその分広がるので
+    box-sizing: border-boxをかけてその広がりをふせぐ */
+    border: 1px dotted #666;
+    padding: 8px;
+    /* 枠線を作成し8pxの内側の余白を作成 */
+}
+
+
+.m-column .text{
+    line-height: 1.7;
+    /* 一番読みやすい行間は、line-heightの、1.5～2の間とされてる */
+    letter-spacing: 0.05em;
+    /* 一番読みやすい文字間は、letter-spacingの、0.05em～0.08emの間とされてる */
+    padding: 8px 9px 20px;
+    /* 内側の余白の調整 */
+}
+
+
+
+
+/*-----------------------------------------
+    column setting
+------------------------------------------*/
+
+.column h3{
+    border-left: 4px solid #556;
+    background-color: #eee;
+    padding: 10px 8px; 
+    font-size: 18px;  
+    margin-bottom: 10px; 
+}
+
+
+.column .column_list{
+    display: flex;
+    /* 子要素、水平方向の揃えの親要素設定  */
+    justify-content: space-between;
+    /*  水平方向の揃えのオプション ( 両端揃い )*/
+    margin-bottom: 50px;
+     /* 次の下のブロックに余白を設定 */
+}
+
+.column .column_list .photo{
+    width: 30%;
+    /* 幅の取得 */
+}
+.column .column_list .text{
+    width: 65%;
+    /* 幅の取得 */
+    line-height: 1.7;
+    /* 一番読みやすい行間は、line-heightの、1.5～2の間とされてる */    
+    letter-spacing: 0.05em;
+    /* 一番読みやすい文字間は、letter-spacingの、0.05em～0.08emの間とされてる */
+    
+}
+
+

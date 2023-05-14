@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>シングルページのカフェサイト</title>
+    <link rel="stylesheet" href="css/jquery.bxslider.css">
+    <link rel="stylesheet" href="css/lightbox.css">
+    <link rel="stylesheet" href="css/hamburgers.css">
+    <link rel="shortcut icon" href="favicon.png"><!-- ファビコン -->
+    <link rel="apple-touch-icon" sizes="192x192" href="touch-icon.png"><!-- タッチアイコン -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+
+<body>
+    <header>
+        <h1>Cafe de FELICA</h1>
+    </header>
+    <nav id="g-nav">
+        <ul>
+            <li><a href="#">TOP<span>トップ</span></a></li>
+            <li><a href="#news">NEWS<span>お知らせ</span></a></li>
+            <li><a href="#movie">MOVIE<span>動画</span></a></li>
+            <li><a href="#menu">MENU<span>メニュー</span></a></li>
+            <li><a href="#shop">SHOP<span>店舗情報</span></a></li>
+        </ul>
+
+        <div class="sns">
+            <p><img src="img/twitter-brands.svg" alt="twitterアイコン"></p>
+            <p><img src="img/instagram-brands.svg" alt="instagramアイコン"></p>
+            <p><img src="img/line-brands.svg" alt="lineアイコン"></p>
+        </div>
+
+    </nav>
+
+
+
+<!-- ********************************************************************************************* -->
+<p class="hamburger hamburger--spring" id="btn">
+    <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+    </span>
+</p>
+<!-- ↑ハンバーガーメニューを表示させるために必要なコード。丸ごとぶろぐからコピペ -->
+<!-- ********************************************************************************************* -->
+
+
+<div class="main-visual">
+    <ul class="bxslider">
+        <li><img src="img/main01.jpg" alt="コーヒー"></li>
+        <li><img src="img/main02.jpg" alt="おしゃれなカフェ"></li>
+        <li><img src="img/mian03.jpg" alt="カフェの外観"></li>
+    </ul>
+</div>
+
+
+<div class="main-copy">
+
+<h2>Cafe de Felicaは食とアートと音楽が交差する空間を創造します。</h2>
+<p>シェフ・矢島が提供するのは、スペイン料理に「東京」のエッセンスを取り入れたモダンスパニッシュ。<br>
+   店内は、新進気鋭のアーティストとコラボレーションしたアートギャラリー。<br>
+   心地よいチルアウトミュージックが流れる空間でくつろぎのひとときをお過ごしください。</p>
+</div>
+
+<main>
+        <div id="news" class="content">
+            <h2>NEWS</h2>
+
+            <dl id="news-list">
+
+            </dl>
+        </div><!-- /#news -->
+
+        <div id="movie" class="content">
+            <h2>MOVIE</h2>
+            <div class="movie-inner">
+                <video src="img/mame.mp4" autoplay muted loop playsinline></video>
+                <!-- muted(ミュート)とセットじゃないとオートプレイ（動画）は再生できない -->
+                <!-- ↑ autoplay muted loop⇔conrtols（自分で動画を再生・停止できる） -->
+                <!-- playsinlineを入れておかないとスマホで再生されない -->
+            </div>
+        </div><!-- /#movie -->
+
+        <div id="menu" class="content">
+            <h2>MENU</h2>
+            <div class="menu-wrapper">
+                <div class="menu-box">
+                    <h3 class="heading11" data-number="01"">Coffee</h3>
+                    <!-- menu-01など、グループ化したい写真に同じ名前をつける -->
+                    <!-- ↑light-boxにするには、画像をaタグで囲む -->
+                    <a href="img/small-01.jpg" data-lightbox="menu" data-title="menu-01の写真"><img src="img/small-01.jpg" alt="#"></a>
+                </div><!-- /#menu-box -->
+
+
+                <div class="menu-box">
+                    <h3 class="heading11" data-number="02">Croissant</h3>
+                    <a href="img/small-02.jpg" data-lightbox="menu" data-title="menu-02の写真"><img src="img/small-02.jpg" alt="#"></a>
+                </div><!-- /#menu-box -->
+
+
+                <div class="menu-box">
+                    <h3 class="heading11" data-number="03">Donut</h3>
+                    <a href="img/small-03.jpg" data-lightbox="menu" data-title="menu-03の写真"><img src="img/small-03.jpg" alt="#"></a>
+                </div><!-- /#menu-box -->
+
+
+                <div class="menu-box">
+                    <h3 class="heading11" data-number="04">Danish</h3>
+                    <a href="img/small-04.jpg" data-lightbox="menu" data-title="menu-04の写真"><img src="img/small-04.jpg" alt="#"></a>
+                </div><!-- /#menu-box -->
+            </div><!-- /#menu-wrapper -->
+        </div><!-- /#menu -->
+
+        <div id="shop" class="content">
+            <h2>SHOP</h2>
+            <div class="shop-wrapper">
+                <dl class="shop-list">
+                    <dt>住所</dt>
+                    <dd>東京都豊島区南池袋x-y-z</dd>
+                    <dt>お問い合わせ</dt>
+                    <dd><a href="tel:03-1234-5678">03-1234-5678</a></dd><!-- aタグ内の記載で押したら電話がかかるように設定 -->
+                    <dt>席数</dt>
+                    <dd>100席</dd>
+                    <dt>営業時間</dt>
+                    <dd>11:00-22:00</dd>
+                    <dt>定休日</dt>
+                    <dd>水曜日</dd>
+                </dl>
+
+            <div class="sns-box">
+                <a class="twitter-timeline" data-width="300" data-height="400" data-theme="light" href="https://twitter.com/city_toshima?ref_src=twsrc%5Etfw">Tweets by city_toshima</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                <!-- ↑ウジェット制作画面'https://publish.twitter.com/#'にて500x300で貼り付けるTwiiterを作った -->
+            </div><!-- /#sns-box -->
+            </div><!-- /#shop-wrapper -->
+
+            <div class="map-box">
+                <iframe class="g-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3238.945289249685!2d139.71212651460664!3d35.727564035038206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188d68f6cfe057%3A0xddd17dcd7ecaf745!2z6LGK5bO25Yy656uL5Y2X5rGg6KKL5YWs5ZyS!5e0!3m2!1sja!2sjp!4v1649731645033!5m2!1sja!2sjp" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <!-- ↑cssで幅高さをコントロールできるように、初期設定の幅高さを消す -->
+            </div><!-- /#map-box -->
+        </div><!-- /#shop -->
+    </main>
+    
+    <footer>
+        <p><small>&copy; 2017-<span id="this-year"></span> Cafe de FELICA</small></p>
+    </footer>
+    
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> <!-- hosted libralyからコピペ -->
+    <script src="js/jquery.bxslider.js"></script><!-- ダウンロードしたjs>bxsliderのファイル -->
+    <script src="js/lightbox.js"></script><!-- ダウンロードしたlightbox.jsのファイル -->
+
+        <script>
+            $(function(){ /* 手書き */
+            $('.bxslider').bxSlider({ /* hosted libralyのstep3→2行目からコピペ */
+                pager: false,/* 黒い点を消すためのコード。戻すときは'true'*/
+                mode: 'fade',/* 画像の切り替わり方を'horizontal'から'fade'に変えた */
+                auto: true,/* 自動的に画像が切り替わる */
+            });
+
+
+            //お知らせの、外部ファイルを呼び出す
+            $('#news-list').load('news.txt'/* 同階層にあるからそのまま記載 */);
+            
+
+            //フッター部分の、西暦を取得して表示
+            var today = new Date();
+            console.log(today);
+
+            var myYear = today.getFullYear();//西暦のみを取得
+            console.log(myYear);
+            $('#this-year').text(myYear);
+
+
+            //ハンバーガーの設定
+            $('#btn').on('click',function(){
+                $(this).toggleClass('is-active');
+                $('#g-nav').toggleClass('click');
+            });
+
+            //クリックしたら目ビューが消える
+            $('#g-nav a').on('click',function(){
+                $('#g-nav').removeClass('click');
+                $('#btn').removeClass('is-active');
+            });
+        });
+        </script>
+    </main>
+
+
+</body>
+</html>
+

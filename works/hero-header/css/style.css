@@ -1,0 +1,141 @@
+@charset "utf-8";
+*{
+ padding: 0;
+ margin: 0;
+ line-height: 1;
+}
+
+body{
+ display: flex;
+}
+
+/*header
+-------------------*/
+.header{
+ width: 200px;
+ background-color: #83b907;
+/*  position: relative; */
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+}
+
+.header h1{
+ width: 180px;
+}
+
+/*
+.header h1 img{
+ position: absolute;
+ width: 180px;
+ top:0;
+ bottom: 0;
+ left: 0;
+ right: 0;
+ margin: auto;
+}*/
+
+
+
+/*container
+--------------------*/
+.container{
+ width: calc(100vw - 200px);
+ display: flex;
+ flex-wrap: wrap;
+}
+
+
+/*section
+-------------------*/
+section{
+ width: 50%;
+ height: 50vh;
+ box-sizing: border-box;
+}
+
+[class^="top"]{
+ width: 50%;
+}
+
+[class*="btm"]{
+ width: 33.33%;
+}
+
+/*画像
+---------------------*/
+.ph{
+ background-repeat: no-repeat;
+ background-position: 0 0;
+ background-size: cover;
+}
+
+.topL{
+ background-image: url(../img/ph-topL.jpg);
+}
+
+.topR{
+ background-image: url(../img/ph-topR.jpg);
+}
+
+.btmL{
+ background-image: url(../img/ph-btmL.jpg);
+}
+
+.btmM{
+ background-image: url(../img/ph-btmM.jpg);
+}
+
+.btmR{
+ background-image: url(../img/ph-btmR.jpg);
+}
+
+/*caption設定
+----------------------*/
+.ph{
+ position: relative;
+ overflow: hidden;
+}
+
+.ph:hover .caption{
+ top:0;
+}
+
+.ph .caption{
+ transition: 0.4s;
+ position: absolute;
+ top: 80%;
+ display: block;
+ width: 100%;
+ height: 100%;
+ padding: 25px;
+
+ color: #fff;
+ background-color: rgba(132, 162, 10, 0.3);
+ text-decoration: none;
+ box-sizing: border-box;
+ 
+ opacity: 1;/*透明度*/
+ 
+}
+
+.ph .caption:hover{
+  opacity: 1;
+}
+
+
+
+.ph .caption h2{
+  margin-top: 7px;
+  margin-bottom: 42px;
+  font-size: 36px;
+  text-align: center;
+}
+
+.ph .caption p{
+  width: 80%;
+  margin: auto;
+  line-height: 1.5;
+}
+

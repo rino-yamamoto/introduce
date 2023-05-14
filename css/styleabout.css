@@ -1,0 +1,376 @@
+@charset "utf-8";
+
+/* riset-start------------------------------------ */
+html{box-sizing:border-box;-webkit-text-size-adjust:100%}*,:after,:before{background-repeat:no-repeat;box-sizing:inherit}:after,:before{text-decoration:inherit;vertical-align:inherit}*{padding:0;margin:0;box-sizing:border-box;}audio:not([controls]){display:none;height:0}hr{overflow:visible}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}summary{display:list-item}small{font-size:40%}[hidden],template{display:none}abbr[title]{border-bottom:1px dotted;text-decoration:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}code,kbd,pre,samp{font-family:monospace,monospace}b,strong{font-weight:bolder}dfn{font-style:italic}mark{background-color:#ff0;color:#000}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}input{border-radius:0}[role=button],[type=button],[type=reset],[type=submit],button{cursor:pointer}[disabled]{cursor:default}[type=number]{width:auto}[type=search]{-webkit-appearance:textfield}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}textarea{overflow:auto;resize:vertical}button,input,optgroup,select,textarea{font:inherit}optgroup{font-weight:700}button{overflow:visible}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:0;padding:0}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button:-moz-focusring{outline:1px dotted ButtonText}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}button,select{text-transform:none}button,input,select,textarea{background-color:transparent;border-style:none;color:inherit}select{-moz-appearance:none;-webkit-appearance:none}select::-ms-expand{display:none}select::-ms-value{color:currentColor}legend{border:0;color:inherit;display:table;max-width:100%;white-space:normal}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}img{border-style:none;vertical-align: bottom}progress{vertical-align:baseline}svg:not(:root){overflow:hidden}audio,canvas,progress,video{display:inline-block}@media screen{[hidden~=screen]{display:inherit}[hidden~=screen]:not(:active):not(:focus):not(:target){position:absolute!important;clip:rect(0 0 0 0)!important}}[aria-busy=true]{cursor:progress}[aria-controls]{cursor:pointer}[aria-disabled]{cursor:default}::-moz-selection{background-color:#b3d4fc;color:#000;text-shadow:none}::selection{background-color:#b3d4fc;color:#000;text-shadow:none}ul,ol{list-style:none;}a{text-decoration:none;}.wrapper{overflow:hidden;}body{overflow-y:scroll;}img{max-width: 100%;}
+ul,li{
+    list-style: none;
+}
+/* riset-end------------------------------------ */
+
+/* fixed設定 */
+.header h1{
+    position: fixed;
+    top: 30px;
+    left: 23px;
+}
+.header p img{
+    position: fixed;
+    top: 30px;
+    right: 23px;
+}
+.nav{
+    position: fixed;
+    top: 90px;
+    right: 0;
+}
+
+/* ハンバーガーメニュー */
+.openbtn{
+    visibility: hidden;
+}
+
+/* 文字設定 */
+h2, p{
+    font-family: 'Josefin Sans', sans-serif;
+    color: rgb(72, 83, 81);
+    line-height: 2;
+    font-size: 16px;
+}
+h2{font-weight:280;}
+
+/* wrapper部分 */
+.wrapper{
+    max-width: 100%;
+    padding: 0 23px;
+}
+
+/* logo部分(header) */
+.contents{
+    display: flex;
+    justify-content: space-between;
+
+    padding: 30px 23px 15px;
+}
+.contents a{
+    width: 140px;
+}
+
+/* nav部分 */
+.nav{
+    display: flex;
+    justify-content: flex-end;
+}
+.nav li{
+    padding-left: 20px;
+    font-weight: bold;
+    font-size: 12px;
+    letter-spacing : 5px;
+    color: rgb(72, 83, 81);
+}
+
+/* main部分 */
+.main{
+    margin: 0 auto;
+    text-align: center;
+}
+.main h2{
+    font-size: 40px;
+    letter-spacing: 13px;
+    margin-bottom: 125px;
+}
+/* about部分 */
+.about{
+    margin-top: 193px;
+    margin-bottom: 310px;
+}
+.about .img img{
+    max-width: 400px;
+    max-height: 400px;
+    margin: 20px auto 80px;
+}
+.about .name{
+    font-size: 45px;
+    letter-spacing: 28px;
+    margin-bottom: 50px;
+}
+.about .text{
+    margin-bottom: 40px;
+}
+
+
+/* skill部分 */
+.skill-wrap{
+    margin-bottom: 310px;
+    margin-bottom: 200px;
+    padding: 0 30px;
+}
+.skill{
+    display: flex;
+    justify-content: space-between;
+    
+    max-width: 960px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+.skill02{
+    display: flex;
+    justify-content: space-between;
+    
+    max-width: 960px;
+    margin: 0 auto;
+    margin-bottom: 45px;
+}
+
+
+/* hobby部分 */
+.hobby-wrap{
+    margin-bottom: 165px;
+    padding: 0 30px;
+}
+.hobby{
+    display: flex;
+    justify-content: space-between;
+    max-width: 960px;
+    margin: 0 auto;
+}
+.hobby img{
+    max-width: 190px;
+}
+.trip{
+    max-width: calc(905px/4);
+    padding: 0 10px 35px;
+}
+.camp{
+    max-width: calc(905px/4);
+    padding: 0 10px 35px;
+}
+.onsen{
+    max-width: calc(905px/4);
+    padding: 0 10px 35px;
+}
+.anime{
+    max-width: calc(905px/4);
+    padding: 0 10px 35px;
+}
+/* country部分 */
+.country-wrap{
+    margin-bottom: 100px;
+    padding: 0 30px;
+}
+.country{
+    display: flex;
+    justify-content: space-between;
+    max-width: 960px;
+    margin: 0 auto;
+}
+.country img{
+    max-width: 190px;
+}
+.japan{
+    max-width: calc(905px/3);
+    padding: 0 10px 35px;
+}
+.vn{
+    max-width: calc(905px/3);
+    padding: 0 10px 35px;
+}
+.ky{
+    max-width: calc(905px/3);
+    padding: 0 10px 35px;
+}
+
+
+/* padding-top部分 */
+.padding-top{
+    padding-top: 20px;
+}
+
+
+/* ****************************************************************************************** */
+/* footer部分 */
+.footer p{
+    font-size: 20px;
+}
+.footer .right-to-left{
+    color: rgb(72, 83, 81);
+}
+.right-to-left {
+    /* 文字の縦書き */
+    -ms-writing-mode: tb-rl;
+    writing-mode: vertical-rl;
+
+    /* 画面に固定 */
+    position: fixed;
+    bottom: 25px;
+    left: 20px;
+}
+
+/* レスポンシブ対応********************************************************************** */
+/* タブレット */
+@media screen and (max-width: 959px) {
+.nav li{
+    padding-left: 10px;
+}
+
+/* about部分 */
+.about{
+    margin-top: 170px;
+    margin-bottom: 200px;
+    padding: 0 30px;
+}
+.about .img img{
+    max-width: 74%;
+}
+.about .name{
+    font-size: 30px;
+}
+
+/* skill部分 */
+.skill-wrap{
+    padding: 0 30px;
+}
+.skill{
+    margin-bottom: 60px;
+}
+.skill img{
+    max-width: 74%;
+}
+.skill02{
+    margin-bottom: 45px;
+}
+.skill02 img{
+    max-width: 74%;
+}
+
+/* hobby部分 */
+.hobby-wrap{
+    margin-bottom: 200px;
+    padding: 0 30px;
+}
+.hobby{
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* country部分 */
+.country{
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* padding-top部分 */
+.padding-top{
+    padding-top: 20px;
+}
+
+/* ****************************************************************************************** */
+/* footer部分 */
+.right-to-left {
+    left: 10px;
+}
+}
+
+/* レスポンシブ対応********************************************************************** */
+/* SP */
+@media screen and (max-width: 519px) {
+    /* h2文字設定 */
+    .main h2 {
+        font-size: 25px;
+        letter-spacing: 11px;
+    }
+
+    /* ハンバーガーメニュー */
+    #g-nav-pc{
+        visibility: hidden;
+    }
+    .openbtn{
+        visibility: visible;
+    }
+    .header p img {
+        right: 55px;
+    }
+    
+    .nav li{
+        padding-left: 10px;
+    }
+    
+    /* about部分 */
+    .skill-wrap h2,
+    .hobby-wrap h2,
+    .country-wrap h2{
+        margin-bottom: 75px;
+    }
+    .about{
+        margin-top: 90px;
+        margin-bottom: 150px;
+    }
+    .about .img img{
+        margin: 20px auto 40px;
+        /* max-width: 74%; */
+    }
+    .about .name{
+        font-size: 22px;
+        letter-spacing: 24px;
+    }
+    
+    /* skill部分 */
+    .skill-wrap {
+        margin-bottom: 150px;
+    }
+    .skill{
+        flex-wrap: wrap;
+        margin-bottom: 0;
+        justify-content: center;
+    }
+    .skill div,
+    .skill02 div{
+        margin-bottom: 35px;
+    }
+    .skill img{
+        max-width: 74%;
+    }
+    .skill02{
+        margin-bottom: 45px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .skill02 img{
+        max-width: 74%;
+    }
+    
+    /* hobby部分 */
+    .hobby-wrap{
+        margin-bottom: 150px;
+        padding: 0 30px;
+    }
+    .hobby{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    /* country部分 */
+    .country{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    /* padding-top部分 */
+    .padding-top{
+        padding-top: 20px;
+    }
+    
+    /* ****************************************************************************************** */
+    /* footer部分 */
+    .right-to-left {
+        left: -1px;
+    }
+}
+
+/* レスポンシブ対応********************************************************************** */
+/* SP */
+@media screen and (max-width: 490px) {
+    .about .name{
+        font-size: 17px;
+        letter-spacing: 14px;
+    }
+}
