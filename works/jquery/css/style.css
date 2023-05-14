@@ -1,0 +1,173 @@
+@charset "UTF-8";
+
+
+html,body,h1,h2,ul,li,p{
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+
+
+body{
+    font-family: "Hiragino Kaku Gothic Pro",  Meiryo, sans-serif;
+    color: #444;
+}
+
+li{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color:inherit;
+}
+
+/* reset and initial */
+
+header{
+    height: 500px;
+    background: url(../img/main01.jpg) no-repeat center/cover;
+}
+
+
+header h1{
+    padding: 50px 0 0 30px;
+    font-size: 40px;
+}    
+
+
+nav{
+    position: sticky;
+    top:0;
+    left:0;
+    background-color: rgba(119, 119, 119, 1);
+
+}
+
+nav ul{
+    display: flex ;
+}
+
+
+nav li{
+    width: 20%;
+    line-height: 50px;
+    text-align: center;
+}
+
+nav a{
+    display: block;
+    color: #eee;
+    letter-spacing: 0.1em;
+}
+
+nav a:hover{
+    background-color: #ddd;
+    color: #444;
+}
+
+
+
+.container{
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.main{
+    background-color: #eee;
+    margin-bottom: 30px;
+
+}
+
+.box{
+    margin-bottom: 80px;
+}
+
+.box>h2{
+    font-size: 20px;
+    padding: 40px 0 20px 20px;
+    
+}
+
+.box>p{
+    padding: 0 50px 60px;
+    line-height: 1.8;
+}
+
+footer{
+    background-color: #ccc;
+}
+
+footer>p{
+    text-align: center;
+    line-height: 200px;
+}
+
+#toTop{
+    position: fixed;
+    right: 5%;
+    bottom: 50px;
+    width: 60px;
+    height: 60px;
+    display: block;
+    background-color: #666;
+    text-align: center;
+    line-height: 60px;
+    font-size: 14px;
+    color: #fff;
+    display: none;
+}
+
+
+/* call to action setting */
+
+
+#bg{
+    position: fixed;
+    /* fixedは、スクロールしても必ず幅と高さ（場所）が追随する */
+    top: 0;
+    left: 0;
+    background-color: rgba(40, 40, 40, 0.5); 
+    width: 100%;
+    height: 100vh;
+    display: none;
+
+}
+
+#bg>.pr{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    max-width: 600px;
+    height: 250px;
+    margin: auto;
+    /* ある特定の領域の垂直・水平中央に位置させる設定のひとつ */
+    padding: 20px;
+    background-color: #fff;
+}
+
+#bg>.pr>.close{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px 15px;
+}
+
+#bg>.pr p{
+    line-height: 1.7;
+}
+
+#bg .pr_btn{
+    display: block;
+    width: 80%;
+    margin: 40px auto 0;
+    padding: 15px 0;
+    text-align: center;
+    background-color: #666;
+    color: #fff;
+    font-size: 18px;
+    letter-spacing: 0.08em;
+
+}

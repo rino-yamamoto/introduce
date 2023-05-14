@@ -1,0 +1,116 @@
+@charset "utf-8";
+
+/* riset-start------------------------------------ */
+html{box-sizing:border-box;-webkit-text-size-adjust:100%}*,:after,:before{background-repeat:no-repeat;box-sizing:inherit}:after,:before{text-decoration:inherit;vertical-align:inherit}*{padding:0;margin:0;box-sizing:border-box;}audio:not([controls]){display:none;height:0}hr{overflow:visible}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}summary{display:list-item}small{font-size:80%}[hidden],template{display:none}abbr[title]{border-bottom:1px dotted;text-decoration:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}code,kbd,pre,samp{font-family:monospace,monospace}b,strong{font-weight:bolder}dfn{font-style:italic}mark{background-color:#ff0;color:#000}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}input{border-radius:0}[role=button],[type=button],[type=reset],[type=submit],button{cursor:pointer}[disabled]{cursor:default}[type=number]{width:auto}[type=search]{-webkit-appearance:textfield}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}textarea{overflow:auto;resize:vertical}button,input,optgroup,select,textarea{font:inherit}optgroup{font-weight:700}button{overflow:visible}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:0;padding:0}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button:-moz-focusring{outline:1px dotted ButtonText}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}button,select{text-transform:none}button,input,select,textarea{background-color:transparent;border-style:none;color:inherit}select{-moz-appearance:none;-webkit-appearance:none}select::-ms-expand{display:none}select::-ms-value{color:currentColor}legend{border:0;color:inherit;display:table;max-width:100%;white-space:normal}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}img{border-style:none;vertical-align: bottom}progress{vertical-align:baseline}svg:not(:root){overflow:hidden}audio,canvas,progress,video{display:inline-block}@media screen{[hidden~=screen]{display:inherit}[hidden~=screen]:not(:active):not(:focus):not(:target){position:absolute!important;clip:rect(0 0 0 0)!important}}[aria-busy=true]{cursor:progress}[aria-controls]{cursor:pointer}[aria-disabled]{cursor:default}::-moz-selection{background-color:#b3d4fc;color:#000;text-shadow:none}::selection{background-color:#b3d4fc;color:#000;text-shadow:none}ul,ol{list-style:none;}a{text-decoration:none;}.wrapper{overflow:hidden;}body{overflow-y:scroll;}img{max-width: 100%;}
+ul,li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color:rgb(72, 83, 81);
+}
+/* riset-end------------------------------------ */
+
+/* 文字設定 */
+h1, h2, p{
+    font-family: 'Josefin Sans', sans-serif;
+    color: rgb(72, 83, 81);
+}
+h1{
+    font-size: 40px;
+    letter-spacing: 14px;
+    font-weight: 200;
+    
+    margin-bottom: 30px;
+} 
+h2{
+    font-size: 23px;
+}
+p{
+    line-height: 2;
+    font-size: 16px;
+}
+
+/* logo部分 */
+.logo{
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+
+    font-size: 1.7em;
+    line-height: 2;
+
+    background: url(../../../img/logo.svg) no-repeat ;
+
+    position: fixed;
+    top: 30px;
+    left: 23px;
+}
+
+/* wrapper部分 */
+.wrapper{
+    margin: 0 auto;
+    max-width: 960px;
+}
+
+/* header部分 */
+.header-text{
+    margin-top: 10px;
+}
+.second{
+    margin-bottom: 80px;
+
+}
+.picture{
+    max-width: 960px;
+    margin-bottom: 100px;
+}
+.picture p img{
+    margin-top: 100px;
+}
+h1{
+    margin-bottom: 30px;
+
+}
+
+/* アイコン部分 */
+.time{
+    margin-bottom: 20px;
+}
+.time, .target{
+    display: flex;
+    justify-content: flex-start;
+}
+.time-icon img{
+    max-width: 50px;
+}
+
+.text{
+    margin-left: 30px;
+    line-height: 50px;
+}
+
+.target{
+    margin-bottom: 80px;
+}
+
+/* study部分 */
+.study h2{
+    margin-bottom: 30px;
+}
+.content{
+    max-width: 100%;
+    height: 340px;
+    background-color: rgba(104, 129, 54, 0.11);
+    padding: 30px;
+
+    margin-bottom: 60px;
+}
+.back{
+    padding: 10px;
+    display: inline-block;
+    background-color:rgba(104, 129, 54, 0.11);
+    margin: 0 auto;
+    margin-bottom: 160px;
+    
+}
